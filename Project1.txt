@@ -1,0 +1,69 @@
+
+Page
+
+of 2
+ZOOM
+CS5331: Mobile Data Management and Privacy
+Summer II 2025
+Project #1: HelloCSIM
+• Name only: ____________________________________
+• Release date: July 10, 2025 (Thursday)
+• Due date: July 13, 2025 (Sunday), submit through Raider Canvas before midnight, 11:59
+PM
+• It should be done individually; No handwritten code or report; No email submission; No late
+homework will be accepted.
+• Total 10 points
+1. HPCC Account
+Your HPCC account has been requested and approved.
+• Cluster: RedRaider
+• OS: Linux (CentOS 8.1 on AMD nodes, CentOS 7.4 on Quanah Broadwell Nodes)
+• Login Node: login.hpcc.ttu.edu
+• Usage: High speed Linux system with general Linux based applications on CPU and GPU nodes
+• HPCC user guides are accessible on our website at
+o https://www.depts.ttu.edu/hpcc/userguides/index.php
+• Please read HPCC Data Policy before using the clusters:
+o https://www.depts.ttu.edu/hpcc/operations/datapolicy.php
+• If possible, please attend or view a session of the HPCC new user training, dates and location
+information for which can be found at https://www.depts.ttu.edu/hpcc/about/training.php along
+with slides and videos from past training sessions.
+2. Access HPCC Linux Server (login.hpcc.ttu.edu)
+Please follow the instructions to download and install software and access the server.
+• Download a terminal emulator called PuTTY.
+o Go to https://www.putty.org/
+• Run putty.exe
+• Before launching the connection to the server, you will need to check the “SSH” box and then
+enter “login.hpcc.ttu.edu”. Click on “Open” and your connection should be established.
+• The credentials you use to log into the server are your eRaider username and password.
+• NOTE: You will also need to download and install GlobalProtect VPN Client from IT Online
+Software Store (software.ttu.edu) for TTUnet VPN (vpn.ttu.edu) before logging into the server
+from off-campus.
+• You will be given a temporary account, and thus your account will be removed at the end of the
+semester. You have a limited quota, and please do not store anything except the project-related
+files.
+• If you want to transfer or download files to/from the server, you can use any secure ftp
+applications, such as WinSCP
+o https://winscp.net/eng/index.php
+3. CSIM Installation
+The software is located under /lustre/work/slim, where you can copy over, extract, and run the code.
+Please follow the instructions:
+• cp /lustre/work/slim/CSIM.zip $HOME #Copy the zip file to one's own environment
+• unzip CSIM.zip #Extract the file
+• chmod +x ./csim20_linux/Linux/64-bit/gcc/csim.gcc #Make the csim.gcc file executable in the
+home area
+4. Refer to the CSIM manual:
+• CSIM20 Quick Start Guide for C
+• CSIM20 User's Guide for C
+• http://www.mesquite.com/documentation/
+5. Compilation & Run:
+• ./csim.gcc ex1.c –o ex1
+• ./ex1
+6. Review Example Codes
+• Compile and run the example codes (ex1.c, ex2.c, and ex3.c) uploaded in Raider Canvas.
+• Refer to the CSIM manual and review the example codes provided.
+7. What to submit?
+• Compile and run the example codes (ex1.c, ex2.c, and ex3.c) and turn-in their outputs. You
+should submit 3 output files, e.g., ex1.out, ex2.out, and csim.out.
+• For ex1.c and ex2.c, please make output file names as ex1.out and ex2.out, respectively. For
+example, you can save the scrolled output into a file, “./ex1 > ex1.out”. You can display the
+content of the file, “cat ex1.out”.
+• For ex3.c, the output file name is already fixed in the program, “csim.out”.
