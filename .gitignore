@@ -1,0 +1,41 @@
+# Compiled binaries
+*.o
+*.out
+*.exe
+proj2_azzam_sahel
+local_test
+
+# CSIM output files
+xxx.out
+csim.out
+*.trace
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Debugging symbols
+*.dSYM/
+
+# Temporary files
+*~
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+
+# Documentation temporaries
+~$*.docx
+~$*.doc
+~$*.pptx
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.backup 
