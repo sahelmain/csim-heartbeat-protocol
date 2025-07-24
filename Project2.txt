@@ -1,0 +1,71 @@
+
+1
+CS5331: Mobile Data Management and Privacy 
+Summer II 2025 
+ 
+Project #2: Heartbeat 
+ 
+• Name only: ____________________________________ 
+• Release date: July 16, 2025 (Wednesday) 
+• Due date: July 23, 2025 (Wednesday), submit through Raider Canvas before midnight, 
+11:59 PM  
+• It  should  be  done  individually;  No  handwritten  code  or  report;  No  email  submission;  No  late 
+homework will be accepted.  
+• Total 20 points 
+ 
+1. Implement a simple inter-process communication protocol that exchanges two control packets, Hello 
+and Hello_Ack. Refer to the example code shown in lecture note 04.  
+• Suppose there are five nodes in a network, where each node is fully connected with others. Each 
+node  generates  a  Hello  packet  periodically  by  following  inter-arrival  time,  exponential 
+(5.0). You can feel free to change the inter-arrival time for experiments.  
+• A sender node (in short, sender) transmits a Hello packet to a randomly chosen receiver node (in 
+short, receiver). Upon receiving, the receiver replies to a Hello_Ack packet. If the sender receives 
+the  Hello_Ack  packet,  then  the  transmission  is  successful.  Suppose  it  takes  0.2  seconds  to 
+transmit  a  packet  over  the  network,  e.g.,  transmission  time.  A  local  processing  delay  before 
+replying Hello_Ack is 0.1 second. 
+• A packet can be lost during the transmission because of an unreliable link quality. Suppose a set 
+of  packet  loss  probabilities  is  0.1,  0.2,  0.3,  0.4,  and  0.5.  If  the  sender  does  not  receive  the 
+Hello_Ack  packet  within  a  timeout  period  (2.5  seconds),  it  retransmits  a  Hello  packet.  If  the 
+sender still does not receive the Hello_Ack packet, then the transmission fails.  
+• Dump a snapshot of events (i.e., a packet loss probability is 0.3). Only one page would be enough. 
+For example,  
+... 
+node.0 sends a Hello to node.3 at 100.2 seconds. 
+node.2 replies a Hello_Ack to node.1 at 100.5 seconds 
+... 
+node.4 sends a Hello to node.3 at 110.5 seconds 
+node.1 receives a Hello_Ack from node.2 at 110.6 seconds 
+node.4 re-sends a Hello to node.3 at 112.5 seconds 
+... 
+• The simulation ends when the simulation time reaches 1,000 seconds. Or feel free to change the 
+simulation time based on your implementation.   
+• Draw  two  result  graphs  in  terms  of  following  performance  metrics  against  the  packet  loss 
+probabilities (0.1, 0.2, 0.3, 0.4, or 0.5).    
+Percentage of successful transmissions  
+Percentage of failed transmissions  
+ 
+2. Type the project number and your name (Last, First) at the top in your source code. 
+• /* Project #2; Bond, James */ 
+ 
+3. Refer to CSIM manual uploaded in the class homepage:   
+• CSIM20 Quick Start Guide for C 
+• CSIM20 User's Guide for C  
+• http://www.mesquite.com/documentation/ 
+ 
+4. Compilation & Run:  
+• ./csim.gcc proj2_bond_james.c –o proj2_bond_james 
+• ./proj2_bond_james 
+ 
+5. What to submit?   
+• Source code  
+o Your source code file name should be “project number” + “last name” + “first name”, e.g., 
+“pro2_bond_james.c”. 
+• Report (e.g., pdf) including,  
+o Your  report  file  name  should  be  “project  number”  +  “last  name”  +  “first  name”,  e.g., 
+“pro2_bond_james.pdf”. 
+o Instructions on how to run your program 
+o All the simulation parameters or assumption(s) deployed 
+o Two result graphs and explanation 
+o Any implementation issues or anything you want to mention  
+• The TA will compile and run your source code and double-check your results. 
+ 
