@@ -35,7 +35,42 @@ The simulation tracks and analyzes:
 
 ## 🚀 Getting Started
 
-More detailed instructions will be added as the project develops.
+### Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/sahelmain/csim-heartbeat-protocol.git
+cd csim-heartbeat-protocol
+
+# View available build options
+make help
+
+# For HPCC (with CSIM)
+make hpcc
+./proj2_azzam_sahel
+
+# For local testing
+make local
+make run-local
+
+# Generate performance graphs
+make graphs
+```
+
+### 📁 Project Files
+- `proj2_azzam_sahel.c` - Main CSIM implementation
+- `local.c` - Local testing version with mock CSIM
+- `V2.c` - Simplified testing framework
+- `create_graphs.py` - Performance visualization
+- `Makefile` - Build system and automation
+
+### 📊 Results
+The simulation generates:
+- Success/failure transmission percentages
+- Performance graphs across packet loss scenarios
+- Event snapshots for detailed analysis
+- Comprehensive performance metrics
+
+For detailed setup instructions, see [Installation Guide](docs/INSTALLATION.md).
 
 ---
 *This project is part of the CS5331 coursework at Texas Tech University.* 
